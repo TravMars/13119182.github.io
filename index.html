@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gaming Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: black; /* Black background */
+            color: white;
+        }
+        h1 {
+            color: white;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: white;
+        }
+        input {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            border: none;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: yellow; /* Yellow links */
+        }
+        a:hover {
+            color: red; /* Red hover effect */
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to My Gaming Site!</h1>
+        <p>Click on a game to play:</p>
+        <input type="text" id="search" onkeyup="searchGames()" placeholder="Search for a game...">
+        <ul id="gameList">
+            <li><a href="1v1 LOL.htm">1v1 LOL</a></li>
+            <li><a href="2048.htm">2048</a></li>
+            <li><a href="Big Tower Tiny Square.htm">Big Tower Tiny Square</a></li>
+            <li><a href="BitLife.htm">BitLife</a></li>
+            <li><a href="Bottle Flip 3d.htm">Bottle Flip 3D</a></li>
+            <li><a href="Cluster Rush1.htm">Cluster Rush</a></li>
+            <li><a href="CraftMine.htm">CraftMine</a></li>
+            <li><a href="Cut the Rope.htm">Cut the Rope</a></li>
+            <li><a href="DogeMiner.htm">DogeMiner</a></li>
+            <li><a href="EaglerCraft.htm">EaglerCraft</a></li>
+            <li><a href="Escape Road.htm">Escape Road</a></li>
+            <li><a href="Geom-Dash.htm">Geometry Dash</a></li>
+            <li><a href="HolidayCTR.htm">Holiday Cut The Rope</a></li>
+            <li><a href="Paper.io 2.htm">Paper.io 2</a></li>
+            <li><a href="Poly Track1.htm">Poly Track</a></li>
+            <li><a href="Push the Square.htm">Push the Square</a></li>
+            <li><a href="Retro Bowl.htm">Retro Bowl</a></li>
+            <li><a href="Snowbattle.io.htm">Snowbattle.io</a></li>
+            <li><a href="Snowrider 3d.htm">Snowrider 3D</a></li>
+            <li><a href="Stickman Hook.htm">Stickman Hook</a></li>
+            <li><a href="Subway Surfers.htm">Subway Surfers</a></li>
+            <li><a href="Territorial.io.htm">Territorial.io</a></li>
+            <li><a href="Time TravelCTR.htm">Time Travel Cut The Rope</a></li>
+            <li><a href="Vex3.htm">Vex 3</a></li>
+            <li><a href="Vex4.htm">Vex 4</a></li>
+            <li><a href="Vex5.htm">Vex 5</a></li>
+            <li><a href="Vex6.htm">Vex 6</a></li>
+            <li><a href="n-gon.htm">N-Gon</a></li>
+            <li><a href="paper-io.htm">Paper.io</a></li>
+            <li><a href="plants-vs-zombies.htm">Plants vs Zombies</a></li>
+            <li><a href="roblox.html">Roblox</a></li>
+            <li><a href="smash-karts.htm">Smash Karts</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function searchGames() {
+            let input = document.getElementById("search").value.toLowerCase();
+            let gameList = document.getElementById("gameList").getElementsByTagName("li");
+
+            for (let i = 0; i < gameList.length; i++) {
+                let game = gameList[i].textContent.toLowerCase();
+                if (game.includes(input)) {
+                    gameList[i].style.display = "";
+                } else {
+                    gameList[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
