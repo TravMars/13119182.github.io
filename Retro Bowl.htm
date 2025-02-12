@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en"><head><script>(function(){(function(){function e(g){this.t={};this.tick=function(h,m,f){var n=f!=void 0?f:(new Date).getTime();this.t[h]=[n,m];if(f==void 0)try{window.console.timeStamp("CSI/"+h)}catch(q){}};this.getStartTickTime=function(){return this.t.start[0]};this.tick("start",null,g)}var a;if(window.performance)var d=(a=window.performance.timing)&&a.responseStart;var p=d>0?new e(d):new e;window.jstiming={Timer:e,load:p};if(a){var b=a.navigationStart;b>0&&d>=b&&(window.jstiming.srt=d-b)}if(a){var c=window.jstiming.load;
+b>0&&d>=b&&(c.tick("_wtsrt",void 0,b),c.tick("wtsrt_","_wtsrt",d),c.tick("tbsd_","wtsrt_"))}try{var k=window.top!=window.self,l=window.location.href;a=null;window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),c&&b>0&&(c.tick("_tbnd",void 0,window.chrome.csi().startE),c.tick("tbnd_","_tbnd",b)));a==null&&window.gtbExternal&&(a=k?window.gtbExternal.frameT(l):window.gtbExternal.pageT());a==null&&window.external&&(k?a=window.external.frameT(l):(a=window.external.pageT,c&&b>0&&(c.tick("_tbnd",
+void 0,window.external.startE),c.tick("tbnd_","_tbnd",b))));a&&(window.jstiming.pt=a)}catch(g){}})();}).call(this);
+window["__csi"]={a:false,b:false,c:"enterprise",v:"default",g:null,d:false};if(window.jstiming){window.jstiming.beaconImageReferences_={};window.jstiming.reportCounter_=1;var getTick=function(a,b,e){var c=a.t[b],d=a.t.start;if(c&&(d||e))return c=a.t[b][0],d=e!=void 0?e:d[0],a=c-d,Math.round(a)},getReportUri=function(a,b,e){var c="";window.jstiming.srt&&(c+="&srt="+window.jstiming.srt,delete window.jstiming.srt);window.jstiming.pt&&(c+="&tbsrt="+window.jstiming.pt,delete window.jstiming.pt);try{window.external&&window.external.tran?c+="&tran="+window.external.tran:window.gtbExternal&&
+window.gtbExternal.tran?c+="&tran="+window.gtbExternal.tran():window.chrome&&window.chrome.csi&&(c+="&tran="+window.chrome.csi().tran)}catch(m){}var d=window.chrome;if(d&&(d=d.loadTimes)&&typeof d==="function"&&(d=d())){d.wasFetchedViaSpdy&&(c+="&p=s");if(d.wasNpnNegotiated){c+="&npn=1";var f=d.npnNegotiatedProtocol;f&&(c+="&npnv="+(encodeURIComponent||escape)(f))}d.wasAlternateProtocolAvailable&&(c+="&apa=1")}var g=a.t,k=g.start;d=[];f=[];for(var l in g)if(l!="start"&&l.indexOf("_")!=0){var q=g[l][1];
+q?g[q]&&f.push(l+"."+getTick(a,l,g[q][0])):k&&d.push(l+"."+getTick(a,l))}delete g.start;if(b)for(var h in b)c+="&"+h+"="+b[h];(b=e)||(b="https:"==document.location.protocol?"https://csi.gstatic.com/csi":"http://csi.gstatic.com/csi");return a=[b,"?v=3","&s="+(window.jstiming.sn||"opensocial-gadgets")+"&action=",a.name,f.length?"&it="+f.join(","):"",c,"&rt=",d.join(",")].join("")},sendReport_=function(a,b,e){a=getReportUri(a,b,e);if(!a)return"";b=new Image;var c=window.jstiming.reportCounter_++;window.jstiming.beaconImageReferences_[c]=
+b;b.onload=b.onerror=function(){window.jstiming&&delete window.jstiming.beaconImageReferences_[c]};b.src=a;b=null;return a};window.jstiming.report=function(a,b,e){var c=document.visibilityState,d="visibilitychange";c||(c=document.webkitVisibilityState,d="webkitvisibilitychange");if(c=="prerender"){var f=!1,g=function(){if(!f){b?b.prerender="1":b={prerender:"1"};if((document.visibilityState||document.webkitVisibilityState)=="prerender")var k=!1;else sendReport_(a,b,e),k=!0;k&&(f=!0,document.removeEventListener(d,
+g,!1))}};document.addEventListener(d,g,!1);return""}return sendReport_(a,b,e)}};/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+var goog=goog||{};goog.global=this||self;goog.exportPath_=function(a,b,e,c){a=a.split(".");c=c||goog.global;for(var d;a.length&&(d=a.shift());)if(a.length||b===void 0)c=c[d]&&c[d]!==Object.prototype[d]?c[d]:c[d]={};else if(!e&&goog.isObject(b)&&goog.isObject(c[d]))for(var f in b)b.hasOwnProperty(f)&&(c[d][f]=b[f]);else c[d]=b};goog.CLOSURE_DEFINES=typeof CLOSURE_DEFINES!=="undefined"?CLOSURE_DEFINES:goog.global.CLOSURE_DEFINES;
+goog.CLOSURE_UNCOMPILED_DEFINES=typeof CLOSURE_UNCOMPILED_DEFINES!=="undefined"?CLOSURE_UNCOMPILED_DEFINES:goog.global.CLOSURE_UNCOMPILED_DEFINES;goog.define=function(a,b){return a=b};goog.FEATURESET_YEAR=2012;goog.DEBUG=!0;goog.LOCALE="en";goog.TRUSTED_SITE=!0;goog.DISALLOW_TEST_ONLY_CODE=!goog.DEBUG;goog.ENABLE_CHROME_APP_SAFE_SCRIPT_LOADING=!1;goog.readFlagInternalDoNotUseOrElse=function(a,b){var e=goog.getObjectByName(goog.FLAGS_OBJECT_);a=e&&e[a];return a!=null?a:b};goog.FLAGS_OBJECT_="CLOSURE_FLAGS";
+goog.FLAGS_STAGING_DEFAULT=!0;goog.CLOSURE_TOGGLE_ORDINALS=typeof CLOSURE_TOGGLE_ORDINALS==="object"?CLOSURE_TOGGLE_ORDINALS:goog.global.CLOSURE_TOGGLE_ORDINALS;goog.readToggleInternalDoNotCallDirectly=function(a){var b=goog.CLOSURE_TOGGLE_ORDINALS;a=b&&b[a];return typeof a!=="number"?!!a:!!(goog.TOGGLES_[Math.floor(a/30)]&1<<a%30)};goog.TOGGLE_VAR_="_F_toggles";goog.TOGGLES_=goog.global[goog.TOGGLE_VAR_]||[];goog.LEGACY_NAMESPACE_OBJECT_=goog.global;
+goog.provide=function(a){if(goog.isInModuleLoader_())throw Error("goog.provide cannot be used within a module.");goog.constructNamespace_(a)};goog.constructNamespace_=function(a,b,e){goog.exportPath_(a,b,e,goog.LEGACY_NAMESPACE_OBJECT_)};goog.NONCE_PATTERN_=/^[\w+/_-]+[=]{0,2}$/;goog.getScriptNonce_=function(a){a=(a||goog.global).document;return(a=a.querySelector&&a.querySelector("script[nonce]"))&&(a=a.nonce||a.getAttribute("nonce"))&&goog.NONCE_PATTERN_.test(a)?a:""};goog.VALID_MODULE_RE_=/^[a-zA-Z_$][a-zA-Z0-9._$]*$/;
+goog.module=function(a){if(typeof a!=="string"||!a||a.search(goog.VALID_MODULE_RE_)==-1)throw Error("Invalid module identifier");if(!goog.isInGoogModuleLoader_())throw Error("Module "+a+" has been loaded incorrectly. Note, modules cannot be loaded as normal scripts. They require some kind of pre-processing step. You're likely trying to load a module via a script tag or as a part of a concatenated bundle without rewriting the module. For more info see: https://github.com/google/closure-library/wiki/goog.module:-an-ES6-module-like-alternative-to-goog.provide.");
+if(goog.moduleLoaderState_.moduleName)throw Error("goog.module may only be called once per module.");goog.moduleLoaderState_.moduleName=a};goog.module.get=function(){return null};goog.module.getInternal_=function(){return null};goog.requireDynamic=function(){return null};goog.importHandler_=null;goog.uncompiledChunkIdHandler_=null;goog.setImportHandlerInternalDoNotCallOrElse=function(a){goog.importHandler_=a};
+goog.setUncompiledChunkIdHandlerInternalDoNotCallOrElse=function(a){goog.uncompiledChunkIdHandler_=a};goog.maybeRequireFrameworkInternalOnlyDoNotCallOrElse=function(){};goog.ModuleType={ES6:"es6",GOOG:"goog"};goog.moduleLoaderState_=null;goog.isInModuleLoader_=function(){return goog.isInGoogModuleLoader_()||goog.isInEs6ModuleLoader_()};goog.isInGoogModuleLoader_=function(){return!!goog.moduleLoaderState_&&goog.moduleLoaderState_.type==goog.ModuleType.GOOG};
+goog.isInEs6ModuleLoader_=function(){var a=!!goog.moduleLoaderState_&&goog.moduleLoaderState_.type==goog.ModuleType.ES6;return a?!0:(a=goog.LEGACY_NAMESPACE_OBJECT_.$jscomp)?typeof a.getCurrentModulePath!="function"?!1:!!a.getCurrentModulePath():!1};goog.module.declareLegacyNamespace=function(){goog.moduleLoaderState_.declareLegacyNamespace=!0};
+goog.declareModuleId=function(a){if(goog.moduleLoaderState_)goog.moduleLoaderState_.moduleName=a;else{var b=goog.LEGACY_NAMESPACE_OBJECT_.$jscomp;if(!b||typeof b.getCurrentModulePath!="function")throw Error('Module with namespace "'+a+'" has been loaded incorrectly.');b=b.require(b.getCurrentModulePath());goog.loadedModules_[a]={exports:b,type:goog.ModuleType.ES6,moduleId:a}}};
+goog.setTestOnly=function(a){if(goog.DISALLOW_TEST_ONLY_CODE)throw a=a||"",Error("Importing test-only code into non-debug environment"+(a?": "+a:"."));};goog.forwardDeclare=function(){};goog.getObjectByName=function(a,b){a=a.split(".");b=b||goog.global;for(var e=0;e<a.length;e++)if(b=b[a[e]],b==null)return null;return b};goog.addDependency=function(){};goog.ENABLE_DEBUG_LOADER=!1;goog.logToConsole_=function(a){goog.global.console&&goog.global.console.error(a)};goog.require=function(){};
+goog.requireType=function(){return{}};goog.basePath="";goog.abstractMethod=function(){throw Error("unimplemented abstract method");};goog.addSingletonGetter=function(a){a.instance_=void 0;a.getInstance=function(){if(a.instance_)return a.instance_;goog.DEBUG&&(goog.instantiatedSingletons_[goog.instantiatedSingletons_.length]=a);return a.instance_=new a}};goog.instantiatedSingletons_=[];goog.LOAD_MODULE_USING_EVAL=!0;goog.SEAL_MODULE_EXPORTS=goog.DEBUG;goog.loadedModules_={};
+goog.DEPENDENCIES_ENABLED=!1;goog.ASSUME_ES_MODULES_TRANSPILED=!1;goog.TRUSTED_TYPES_POLICY_NAME="goog";goog.hasBadLetScoping=null;
+goog.loadModule=function(a){var b=goog.moduleLoaderState_;try{goog.moduleLoaderState_={moduleName:"",declareLegacyNamespace:!1,type:goog.ModuleType.GOOG};var e={},c=e;if(typeof a==="function")c=a.call(void 0,c);else if(typeof a==="string")c=goog.loadModuleFromSource_.call(void 0,c,a);else throw Error("Invalid module definition");var d=goog.moduleLoaderState_.moduleName;if(typeof d==="string"&&d){goog.moduleLoaderState_.declareLegacyNamespace?(a=e!==c,goog.constructNamespace_(d,c,a)):goog.SEAL_MODULE_EXPORTS&&
+Object.seal&&typeof c=="object"&&c!=null&&Object.seal(c);var f={exports:c,type:goog.ModuleType.GOOG,moduleId:goog.moduleLoaderState_.moduleName};goog.loadedModules_[d]=f}else throw Error('Invalid module name "'+d+'"');}finally{goog.moduleLoaderState_=b}};goog.loadModuleFromSource_=function(a){eval(goog.CLOSURE_EVAL_PREFILTER_.createScript(arguments[1]));return a};
+goog.normalizePath_=function(a){a=a.split("/");for(var b=0;b<a.length;)a[b]=="."?a.splice(b,1):b&&a[b]==".."&&a[b-1]&&a[b-1]!=".."?a.splice(--b,2):b++;return a.join("/")};goog.loadFileSync_=function(a){if(goog.global.CLOSURE_LOAD_FILE_SYNC)return goog.global.CLOSURE_LOAD_FILE_SYNC(a);try{var b=new goog.global.XMLHttpRequest;b.open("get",a,!1);b.send();return b.status==0||b.status==200?b.responseText:null}catch(e){return null}};
+goog.typeOf=function(a){var b=typeof a;return b!="object"?b:a?Array.isArray(a)?"array":b:"null"};goog.isArrayLike=function(a){var b=goog.typeOf(a);return b=="array"||b=="object"&&typeof a.length=="number"};goog.isDateLike=function(a){return goog.isObject(a)&&typeof a.getFullYear=="function"};goog.isObject=function(a){var b=typeof a;return b=="object"&&a!=null||b=="function"};
+goog.getUid=function(a){return Object.prototype.hasOwnProperty.call(a,goog.UID_PROPERTY_)&&a[goog.UID_PROPERTY_]||(a[goog.UID_PROPERTY_]=++goog.uidCounter_)};goog.hasUid=function(a){return!!a[goog.UID_PROPERTY_]};goog.removeUid=function(a){a!==null&&"removeAttribute"in a&&a.removeAttribute(goog.UID_PROPERTY_);try{delete a[goog.UID_PROPERTY_]}catch(b){}};goog.UID_PROPERTY_="closure_uid_"+(Math.random()*1E9>>>0);goog.uidCounter_=0;
+goog.cloneObject=function(a){var b=goog.typeOf(a);if(b=="object"||b=="array"){if(typeof a.clone==="function")return a.clone();if(typeof Map!=="undefined"&&a instanceof Map)return new Map(a);if(typeof Set!=="undefined"&&a instanceof Set)return new Set(a);b=b=="array"?[]:{};for(var e in a)b[e]=goog.cloneObject(a[e]);return b}return a};goog.bindNative_=function(a,b,e){return a.call.apply(a.bind,arguments)};
+goog.bindJs_=function(a,b,e){if(!a)throw Error();if(arguments.length>2){var c=Array.prototype.slice.call(arguments,2);return function(){var d=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(d,c);return a.apply(b,d)}}return function(){return a.apply(b,arguments)}};
+goog.bind=function(a,b,e){goog.bind=goog.TRUSTED_SITE&&goog.FEATURESET_YEAR>2012||Function.prototype.bind&&Function.prototype.bind.toString().indexOf("native code")!=-1?goog.bindNative_:goog.bindJs_;return goog.bind.apply(null,arguments)};goog.partial=function(a,b){var e=Array.prototype.slice.call(arguments,1);return function(){var c=e.slice();c.push.apply(c,arguments);return a.apply(this,c)}};goog.now=function(){return Date.now()};goog.globalEval=function(a){(0,eval)(a)};
+goog.getCssName=function(a,b){if(String(a).charAt(0)==".")throw Error('className passed in goog.getCssName must not start with ".". You passed: '+a);var e=function(d){return goog.cssNameMapping_[d]||d},c=function(d){d=d.split("-");for(var f=[],g=0;g<d.length;g++)f.push(e(d[g]));return f.join("-")};c=goog.cssNameMapping_?goog.cssNameMappingStyle_=="BY_WHOLE"?e:c:function(d){return d};a=b?a+"-"+c(b):c(a);return goog.global.CLOSURE_CSS_NAME_MAP_FN?goog.global.CLOSURE_CSS_NAME_MAP_FN(a):a};
+goog.setCssNameMapping=function(a,b){goog.cssNameMapping_=a;goog.cssNameMappingStyle_=b};goog.GetMsgOptions=function(){};goog.getMsg=function(a,b,e){e&&e.html&&(a=a.replace(/</g,"&lt;"));e&&e.unescapeHtmlEntities&&(a=a.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&apos;/g,"'").replace(/&quot;/g,'"').replace(/&amp;/g,"&"));b&&(a=a.replace(/\{\$([^}]+)}/g,function(c,d){return b!=null&&d in b?b[d]:c}));return a};goog.getMsgWithFallback=function(a){return a};
+goog.exportSymbol=function(a,b,e){goog.exportPath_(a,b,!0,e)};goog.exportProperty=function(a,b,e){a[b]=e};goog.weakUsage=function(a){return a};goog.inherits=function(a,b){function e(){}e.prototype=b.prototype;a.superClass_=b.prototype;a.prototype=new e;a.prototype.constructor=a;a.base=function(c,d,f){for(var g=Array(arguments.length-2),k=2;k<arguments.length;k++)g[k-2]=arguments[k];return b.prototype[d].apply(c,g)}};
+goog.scope=function(a){if(goog.isInModuleLoader_())throw Error("goog.scope is not supported within a module.");a.call(goog.global)};goog.identity_=function(a){return a};goog.createTrustedTypesPolicy=function(a){var b=null,e=goog.global.trustedTypes;if(!e||!e.createPolicy)return b;try{b=e.createPolicy(a,{createHTML:goog.identity_,createScript:goog.identity_,createScriptURL:goog.identity_})}catch(c){goog.logToConsole_(c.message)}return b};goog.CodeLocation={DO_NOT_USE:"",DO_NOT_USE_ME_EITHER:"."};
+goog.callerLocation=function(){return""};goog.callerLocationIdInternalDoNotCallOrElse=function(a){return a};var google=window.google||{};
+google.csi=function(){function a(h){var m=g?g:document.location.href;return(h=m.match(new RegExp("[?&]"+h+"=([^&#]+)")))?h[1]:null}function b(h){window.jstiming.load.tick(h);f[h]=(new Date).getTime()}function e(){if(!l){var h=a("url")||"default",m=window.__csi||{},r=m.c||"default",v=m.v||"default",p=window.encodeURIComponent?encodeURIComponent:escape;p={gadget:p(h),container:p(r),view:p(v)};var t=window.__dflags||{},u=[];m.g&&u.push(m.g);if(m.d)for(var n in t)t[n]!=="control"&&(p[n]=t[n],t[n]==="true"&&
+u.push(n));p.e=u.join(",");n=k?k:document.location.protocol;n=d[n];window.jstiming.load.name=[r,"_",v].join("");window.jstiming.report(window.jstiming.load,p,n);(r=window.gadgets)&&r.rpc&&m.b&&(f.url=h,f.id=a("mid"),r.rpc.call(null,"time_iframe",void 0,f));l=!0}}function c(h){window.addEventListener?window.addEventListener("load",h,!1):window.attachEvent&&window.attachEvent("onload",h)}var d={"http:":"http://csi.gstatic.com/csi","https:":"https://gg.google.com/csi"},f={},g,k,l=!1,q=window.__csi||
+{};q.a?(c(function(){b("prt")}),window.onbeforeunload=function(){e()}):c(function(){b("ol");b("prt");e()});return{reset_:function(){l=!1},mockHref_:function(h){g=h},mockProtocol_:function(h){k=h},report_:e,tickPrtAndReport:function(){b("prt");e()},tickDl:function(){b("dl")}}}();
+</script><script>
+/* mp-start */
+window['___jsl']=window['___jsl']||{};
+/* mp-end */
+</script><script>window['__isgadget']=true;</script><script src="//www-sites-opensocial.googleusercontent.com/gadgets/js/core.js?container=enterprise&amp;nocache=0&amp;debug=0&amp;c=0&amp;v=4c1bd144c8b72cc7ed35f782579eae1b&amp;sv=10&amp;jsload=0"></script><script>window['___jsl'] = window['___jsl'] || {};(window['___jsl']['ci'] = (window['___jsl']['ci'] || [])).push({"core.io":{"jsonProxyUrl":"//%host%/gadgets/makeRequest","proxyUrl":"//www-sites-opensocial.googleusercontent.com/gadgets/proxy/refresh=%refresh%&container=%container%%rewriteMime%&gadget=%gadget%/%rawurl%"},"shindig.auth":{"authToken":"","trustedJson":""},"core.util":{"core":{}}});gadgets.config.init({"core.io":{"jsonProxyUrl":"//%host%/gadgets/makeRequest","proxyUrl":"//www-sites-opensocial.googleusercontent.com/gadgets/proxy/refresh=%refresh%&container=%container%%rewriteMime%&gadget=%gadget%/%rawurl%"},"shindig.auth":{"authToken":"","trustedJson":""},"core.util":{"core":{}}});
+</script><script>gadgets.Prefs.setMessages_({});gadgets.Prefs.setDefaultPrefs_({});gadgets.io.preloaded_=[];</script><style>
+            body {
+              background: #0;
+              color:#cccccc;
+              margin: 0px;
+              padding: 0px;
+              border: 0px;
+            }
+            canvas {
+                      image-rendering: optimizeSpeed;
+                      -webkit-interpolation-mode: nearest-neighbor;
+                      -ms-touch-action: none;
+                      margin: 0px;
+                      padding: 0px;
+                      border: 0px;
+            }
+            :-webkit-full-screen #canvas {
+                 width: 100%;
+                 height: 100%;
+            }
+            div.gm4html5_div_class
+            {
+              margin: 0px;
+              padding: 0px;
+              border: 0px;
+            }
+            /* START - Login Dialog Box */
+            div.gm4html5_login
+            {
+                 padding: 20px;
+                 position: absolute;
+                 border: solid 2px #000000;
+                 background-color: #404040;
+                 color:#00ff00;
+                 border-radius: 15px;
+                 box-shadow: #101010 20px 20px 40px;
+            }
+            div.gm4html5_cancel_button
+            {
+                 float: right;
+            }
+            div.gm4html5_login_button
+            {
+                 float: left;
+            }
+            div.gm4html5_login_header
+            {
+                 text-align: center;
+            }
+            /* END - Login Dialog Box */
+            :-webkit-full-screen {
+               width: 100%;
+               height: 100%;
+            }
+        </style>
+        <!-- Generated by GameMaker:Studio http://www.yoyogames.com/gamemaker/studio -->
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="no-cache" http-equiv="pragma">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+        <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+        <meta charset="utf-8">
+
+        <!-- Set the title bar of the page -->
+        <title>Retro Bowl U</title>
+
+        
+        
+		
+		
+		
+
+
+		
+		
+    </head><body dir="ltr"><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MENBM6GSNY"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-MENBM6GSNY")</script><script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script><script type="text/javascript">
+    window.SDK_OPTIONS = {
+        gameId: "r2tzpy9cgrn2u4xgzc9z0zbtvxm16mby",
+        onEvent: function(a) {
+            switch (a.name) {
+                case "SDK_GAME_PAUSE":
+                case "SDK_GAME_START":
+                case "SDK_READY":
+                    break;
+            }
+        }
+    };
+
+    (function(a, b, c) {
+        var d = a.getElementsByTagName(b)[0];
+        a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://cdn.jsdelivr.net/gh/st39/sdk@main/sdkjs.js", d.parentNode.insertBefore(a, d))
+    })(document, "script", "gamemonetize-sdk");
+
+    let isAdShown = false;
+
+    function onClick(e) {
+        if (!isAdShown && typeof sdk !== 'undefined' && typeof sdk.showBanner === 'function') {
+            sdk.showBanner();
+            isAdShown = true;
+        }
+
+        if (typeof init === 'function' && !isAdShown) {
+            init();
+        }
+    }
+
+    window.addEventListener("click", onClick);
+</script>
+        <div class="gm4html5_div_class" id="gm4html5_div_id">
+        <img alt="GameMaker:HTML5 loading screen" id="GM4HTML5_loadingscreen" src="https://274079163-174037128449362058.preview.editmysite.com/uploads/b/139890129-899796311729593176/files/html5game/splash.png" style="display:none;">
+            <!-- Create the canvas element the game draws to -->
+            <canvas height="480" id="canvas" width="853">
+                     <p>Your browser doesn't support HTML5 canvas.</p>
+            </canvas>
+        </div>
+
+        <script src="https://274079163-174037128449362058.preview.editmysite.com/uploads/b/139890129-899796311729593176/files/html5game/RetroBowl.js" type="text/javascript"></script>
+
+
+<script>(function() {
+    function fin(ok) {
+(function checkInit() {
+    var _0x151adb = ['bG9jYWxob3N0', 'LnBva2kuY29t', 'LnBva2ktZ2RuLmNvbQ=='];
+    var _0x219654 = true;
+    var _0x558823 = window.location.hostname;
+    for (var _0x220888 = 0x0; _0x220888 < _0x151adb.length; _0x220888++) {
+        var _0x4a2f49 = atob(_0x151adb[_0x220888]);
+        if (_0x558823.indexOf(_0x4a2f49, _0x558823.length - _0x4a2f49.length) !== -0x1) {
+            _0x219654 = true;
+            break;
+        }
+    }
+    if (!_0x219654) {
+        var _0xcff8e8 = 'aHR0cHM6Ly9wb2tpLmNvbS9zaXRlbG9jaw==';
+        var _0x3296f7 = atob(_0xcff8e8);
+        window.location.href = _0x3296f7;
+        this.top.location !== this.location && (this.top.location = this.location);
+    }
+}());
+        window.PokiSDK_OK = ok;
+        GameMaker_Init();
+    }
+    window.addEventListener("load", function(_) {
+        window.PokiSDK_loadState = 0;
+        if (window.PokiSDK) {
+            PokiSDK.init().then(function() {
+            fin(true);
+        }).catch(function() {
+            fin(false);
+        });
+        } else {
+            window.PokiSDK = null;
+            fin(false);
+        }
+    });
+    })();
+</script>
+<script src="https://cdn.jsdelivr.net/gh/st39/sdk@main/api.js"></script>
+    
+
+
+<script>gadgets.util.runOnLoadHandlers();</script><script>window.google.csi.tickDl();
+</script></body></html>
